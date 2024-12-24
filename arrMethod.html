@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let arr =[10,'hrloo',null,true]
+    console.log(arr)
+
+    let arr1=new Array(10,'hii',20,3)
+    console.log(arr1)
+
+    //methods
+    let arr3=[10,20,30,40]
+    console.log(arr3)
+
+    // //length
+    console.log(arr3.length)
+    //indexof
+    console.log(arr3.indexOf(20))  
+    // //unshift
+    let arr4=arr3.unshift(3,-2)
+    console.log(arr4)
+    console.log(arr3)
+
+    //shift
+    console.log(arr3.shift())
+    console.log(arr3)
+    //push
+    let arr5=arr3.push(60,40)
+    console.log(arr5)
+    console.log(arr3)
+    //pop
+    console.log(arr3.pop())
+    console.log(arr3)
+    //slice
+    console.log(arr3.slice(0,3))
+    console.log(arr3)
+    //splice
+    console.log(arr3.splice(2,1,'hello'))
+    console.log(arr3)
+    //reverse
+    console.log(arr3.reverse())
+    //join
+   console.log(arr3.join("*"))
+   //conacat
+   let arr6=[80,90]
+   let arr7=[100,110]
+   console.log(arr6.concat(arr7))
+   //sort
+   let arr8=[20,30,50,90,60,80,70]
+   console.log(arr8.sort())
+   let arr9=[100,30,495,90,5000,155,70]
+   console.log(arr9.sort((a,b)=>{
+    return a-b
+   }))
+   console.log(arr9.sort((a,b)=>{
+    return b-a
+   }))
+   //includes
+   console.log(arr9.includes(495))
+   console.log(arr9.includes(202))
+   //from
+   let str="heloo"
+   console.log(str)
+   console.log(Array.from(str))
+   //isArray
+   console.log(Array.isArray(arr9))
+   console.log(Array.isArray(str))
+   //forEach
+   arr9.forEach((value,index)=>{
+    console.log(`${value}--->${index}`)
+   })
+   //filter
+   console.log( arr9.filter((ele)=>{
+    return ele>50
+  }))
+  //map
+  arr9.map((ele)=>{
+    console.log(ele+50)
+  })
+  let b=arr9.map((ele)=>{
+    return ele+50
+  })
+  console.log(b)
+
+
+  </script>
+</body>
+</html>
