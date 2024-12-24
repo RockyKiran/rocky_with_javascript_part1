@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <textarea name="" id="demo" cols="30" rows="10"></textarea>
+  <button id="btn">click</button>
+  <script>
+
+
+    let btn=document.getElementById("btn")
+    // console.log(btn)
+
+    btn.addEventListener("click",()=>{
+      let demo=document.getElementById("demo").value  
+    window.navigator.clipboard.writeText(demo)
+  
+    
+    .then(()=>{
+      console.log("it is coppied")
+    })
+    
+    .catch(()=>{
+      console.log("it is not coppied")
+    })
+    })
+
+    
+    
+
+  </script>
+</body>
+</html>
