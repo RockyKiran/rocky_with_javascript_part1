@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let ajax= new XMLHttpRequest
+   console.log(ajax)
+   ajax.open("GET","https://fakestoreapi.com/products")
+   ajax.send()
+   
+   ajax.onload=()=>{
+    console.log(ajax)
+  console.log(ajax.status)
+  console.log(ajax.response)
+  let data=JSON.parse(ajax.response)
+  console.log(data)
+  data.map((res)=>{
+    console.log(res)
+    document.body.innerHTML+=`<h1>${res.id}</h1>`
+    document.body.innerHTML+=`<h2>${res.title}</h2>`
+  })
+   }
+  </script>
+  
+</body>
+</html>
