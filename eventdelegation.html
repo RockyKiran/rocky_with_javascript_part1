@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #demo{
+      border: 2px solid black;
+      height: 200px;
+      width: 200px;
+      /* margin: 50px 50px; */
+      padding: 100px;
+
+    }
+    button{
+      margin: 70px 70px;
+    }
+    ol{
+      border: 2px solid black;
+    }
+    li{
+      border: 2px solid black;
+      height: 50px;
+      width: 70px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div id="demo"><button>click</button></div>
+  <ol>
+    <li>Rocky</li>
+    <li>Sumit</li>
+    <li>Niku</li>
+    <li>Pratik</li>
+    <li>Som</li>
+  </ol>
+
+
+
+
+
+
+
+
+  <script>
+    let demo=document.getElementById("demo")
+    console.log(demo)
+    demo.addEventListener("click",(e)=>{
+      // console.log(e)
+      // console.log("hello")
+      if(e.target.tagName==="BUTTON"){
+        console.log("chutiye")
+      }
+    })
+
+    let ol=document.querySelector("ol")
+    console.log(ol)
+
+    ol.addEventListener("click",(e)=>{
+      if(e.target.tagName==="LI"){
+        console.log("Bhosdike")
+      }
+    })
+
+
+  </script>
+  
+</body>
+</html>
