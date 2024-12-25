@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+<img src="https://tse4.mm.bing.net/th?id=OIP.rCaYh0k2v09tBHOrQsb9PQHaEK&pid=Api&P=0&h=180" alt="" id="img">
+<button id="btn">click</button>
+<input type="text" id="inp"> 
+<div id="div"></div>
+
+   
+
+
+
+  <script>
+
+    let img= document.getElementById("img")
+    console.log(img)
+     let btn=document.getElementById("btn")
+     console.log(btn)
+
+     btn.onclick=function(){
+      let dis= img.classList.toggle(true)
+      if(dis){
+        img.style.visibility="visible"
+        btn.innerHTML="invissible"
+      }
+      else{
+        img.style.visibility="hidden"
+        btn.innerHTML=" visible"
+      }
+     }
+
+     let inp = document.getElementById("inp")
+     console.log(inp)
+     let div= document.getElementById("div")
+     
+    //  console.log(div)
+
+     inp.onkeyup=function(){
+      let inpvalue= inp.value
+      div.innerHTML=`${inpvalue}`
+      div.style.border="1px none black"
+      // div.style.width="300px"
+      
+      
+      
+
+
+     }
+
+
+  </script>
+  
+</body>
+</html>
