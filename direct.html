@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .linkclass:link{
+      text-decoration: none;
+    }
+    .linkclass:hover{
+      border: 5px solid hotpink;
+      border-radius: 5px;
+      font-size: 20px;
+           
+
+    }
+  </style>
+</head>
+<body>
+
+
+<a href="">click for NETFLIX</a><br>
+<a href="">click for FLIPCART</a><br>
+<a href="">click for PRIME</a><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    //to print content on web page
+
+    // document.write('hello rocky')
+    // document.writeln('hello rocky')
+    // document.writeln('hello rocky')
+    // document.writeln('hello rocky')
+    // // document.writeln('hello rocky')
+    // document.writeln('hello rocky')
+    // document.write('hello rocky')
+    // document.write("<h1>web-tec</h1>")
+
+    // //direct access
+    // console.log(document.URL);
+    // console.log(document.baseURI)
+    // console.log(document.doctype)
+    // console.log(document.head)
+    // console.log(document.title)
+    // document.title="flipcart"
+    // console.log(document.body)
+
+    console.log(document.links)
+    console.log(document.links[0])
+    let link=document.links;
+    console.log(link)
+    console.log(link.length)
+    link[0].id="linkid"
+
+    for(let i=0; i<link.length;i++)
+    {
+      console.log(link[i])
+      link[i].className='linkclass'
+
+    }
+
+
+
+
+  </script>
+</body>
+</html>
