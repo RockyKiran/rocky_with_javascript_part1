@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <ol id="demo">
+    <li>lorem</li>
+    <li>lorem</li>
+    <li>lorem</li>
+    <li>lorem</li>
+    <li>lorem</li>
+  </ol>
+
+  <h1 class="heading">web tech</h1>
+  <h1 class="heading">java</h1>
+
+
+  <h2 name="demo2">Lorem ipsum dolor sit amet </h2>
+  <h2 name="demo2">Lorem ipsum dolor sit amet</h2>
+
+
+
+
+
+
+
+
+<script>
+  let a=document.getElementById("demo")
+  console.log(a)
+  a.style.border="2px solid "
+  a.style.backgroundColor="hotpink"
+ console.log( a.children)
+ a.children[0].textContent="Rocky"
+ a.children[1].textContent="swrup"
+ a.children[2].textContent="niku"
+ a.children[3].textContent="pratik"
+ a.children[0].style.color="red"
+ a.children[1].style.color="blue"
+ a.children[2].style.color="green"
+ a.children[3].style.color="aqua"
+ console.log(a.childNodes)
+ a.childNodes[10].textContent="hello bro"
+ console.log(a.lastElementChild)
+ a.lastElementChild.nextSibling.textContent="buddy"
+
+ let b = document.getElementsByClassName("heading")
+ console.log(b)
+console.log(b[0])
+b[0].style.backgroundColor="red"
+b[1].textContent="ReactJS"
+
+let s=document.getElementsByTagName("ol")
+console.log(s)
+s[0].children[2].style.border="2px solid"
+s[0].children[4].style.border="2px solid"
+console.log( s[0].children[2].parentElement)
+console.log( s[0].children[2].parentElement.parentElement)
+console.log( s[0].children[2].parentElement.parentElement.parentElement)
+console.log( s[0].children[2].parentElement.nextElementSibling)
+
+let r= document.getElementsByName("demo2")
+console.log(r)
+r[0].style.color="red"
+r[1].style.color="hotpink"
+r[0].style.border="2px solid black"
+
+
+let k=document.querySelector("#demo")
+console.log(k)
+let n= document.querySelector(".heading")
+console.log(n)
+
+let m= document.querySelector("*")
+console.log(m)
+
+let f=document.querySelectorAll(".heading")
+console.log(f)
+
+let g=document.querySelectorAll("#demo")
+console.log(g)
+
+let h= document.querySelectorAll("*")
+console.log(h)
+console.log(h[4].textContent="rocky")
+
+
+</script>
+
+
+
+  
+</body>
+</html>
