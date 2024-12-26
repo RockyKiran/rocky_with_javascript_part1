@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* .img{
+    
+    border: 5px solid black;
+    background-image: url(https://images.hdqwalls.com/download/loki-the-god-of-mischief-ik-1920x1080.jpg);
+  
+    
+}
+.img{
+    transition: background-image 5s,border-radius 7s, border 3s, width 6s, height 6s
+}
+.img:hover{
+  width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        background-image: url(https://wallpapercave.com/wp/wp8753595.jpg);
+        background-size: 300px 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10%;
+        box-shadow: 20px 20px 20px skyblue, -20px 15px 15px rgb(211, 74, 74), 20px -22px 25px grey,15px 18px 22px royalblue;
+} */
+
+  </style>
+</head>
+<body>
+  <form action="">
+    <input type="text"><br>
+    <input type="password"><br>
+    <button>submit</button>
+    
+  </form>
+  <!-- <img src="https://images.hdqwalls.com/download/loki-the-god-of-mischief-ik-1920x1080.jpg" alt="">
+  <img src="https://images.hdqwalls.com/download/loki-the-god-of-mischief-ik-1920x1080.jpg" alt="">
+  <img src="https://images.hdqwalls.com/download/loki-the-god-of-mischief-ik-1920x1080.jpg" alt=""> -->
+
+
+
+
+
+
+
+  <script>
+    // let img=document.images
+    // console.log(img)
+    // console.log(Array.isArray(img))
+    // let a = Array.from(img)
+    // console.log(a)
+    // console.log(Array.isArray(a))
+
+    // for(let i=0;i<a.length;i++){
+    //   console.log(a[i])
+    //   a[i].style.height="300px"
+    //   a[i].style.weight="300px"
+    //   a[i].style.borderRadius="100px"
+    //   a[i].setAttribute("alt","image")
+    //   a[i].className="img"
+
+    // }
+   let fom=document.forms
+   console.log(fom[0])
+
+   fom[0].style.backgroundImage="url(https://wallpapercave.com/wp/wp8753595.jpg)"
+   fom[0].style.height="400px"
+   fom[0].style.width="400px"
+
+   console.dir(fom[0])
+   fom[0].onsubmit=(e)=>{
+    e.preventDefault()
+    let name = fom[0].children[0]
+    console.log(name)
+    let password=fom[0].children[2]
+    console.log(password)
+    let namePassword= (name.value,password.value)
+    console.log(namePassword)
+
+    if(name.value=="rocky" && password.value==123){
+    window.open("https://www.youtube.com/")
+   }
+   else{
+    window.alert("hey you typing a wrong password")
+   }
+  }
+
+  </script>
+</body>
+</html>
