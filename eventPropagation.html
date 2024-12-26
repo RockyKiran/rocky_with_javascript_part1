@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #Grand-parent{
+      border: 2px solid black;
+      height: 400px;
+      width: 400px;
+    }
+    #Parent{
+      border: 2px solid black;
+      height: 200px;
+      width: 200px;
+      margin-top: 50px;
+      margin-left:  80px;
+
+    }
+    #Child{
+      border: 2px solid black;
+      height: 80px;
+      width: 80px;
+      margin-top: 50px;
+      margin-left: 50px;
+
+    }
+  </style>
+</head>
+<body>
+<!-- <center> -->
+  <div id="Grand-parent">Grand-parent<div id="Parent">Parent<div id="Child">Child</div></div></div>
+<!-- </center> -->
+
+
+
+
+
+
+
+
+  <script>
+    let gp=document.getElementById("Grand-parent")
+    // console.log(gp)
+    gp.addEventListener("click",(e)=>{
+      console.log("i am grand parent")
+      e.target
+      e.stopPropagation()
+      
+
+    },false)
+
+
+    let P=document.getElementById("Parent")
+    // console.log(P)
+    P.addEventListener("click",(f)=>{
+      console.log("i am parent")
+      f.target
+      f.stopPropagation()
+
+    },false)
+
+    let child=document.getElementById("Child")
+    // console.log(child)
+    child.addEventListener("click",(g)=>{
+      console.log("i am child")
+      g.target
+      g.stopPropagation()
+
+    },false)
+
+
+
+  </script>
+</body>
+</html>
