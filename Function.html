@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <h1>rocky</h1>
+  <!-- <script>
+  
+    function:-
+    **********
+
+          First id first citizen in js
+          object in js
+                1)function ddclaration/general function/pure function
+                2)function expression
+                3)function programming
+                            i)HOF(high order function)
+                            II)CBF(call back function)
+               4)arrow function
+               5)nested function
+                           i)lexical scope
+                           ii)clousure
+               6)IIFE(imideately invoking function expression)
+
+     1)function ddclaration
+     **********************
+
+     it is a block of code or set of instruction used to perform a specific operation 
+     it can be hoisted(hoisted means we call the function before we declared the fundtion)
+
+     adv:-
+    *****
+         code reusability(write once and call multiple function)
+         if u write once we can use and call the anywhere in within the function
+         fuction are the highest priority of the java script
+
+
+    return:-
+    *******
+        return it is a keyword
+         it stops the execution the function and controller gives to the caller
+         after  the return keyword whatever we write it can not be execute
+    note:-
+    *****     
+    a function declaration statement can be hoisted(call the function before function declaration)
+
+    syntax:-
+    *****
+
+    function function_name(){//with in the bracket we pass the parameter , and the parameter it is a identifier,and the function name is a
+      
+      statements.....
+      statements......
+    }
+    function_name()//with in the0 barcket we can pass the arguments or values
+
+
+ex-1:-
+*****
+clg(Demo)//it will give print the body of the entire function
+function Demo(){
+  clg("hellow world")
+}
+clg(Demo())// it is give the proper output
+clg(Demo)//it will give the body print of the entire function
+
+ex-2:-
+*****
+clg(Demo)//it will give the body print of the entire function
+function Demo(a,b){
+  let c;
+  c=a+b;
+  return c;
+}
+clg(Demo(10,20))// it is give the proper output
+clg(Demo)//it will give the body print of the entire function
+
+
+2)function expression:-
+***********************
+    it is a ussed to asssign the function has a value to one variable is called function expression 
+    it is a also ussed to performing a specific task 
+    in function expression hoisting is not possible
+
+syntax:-
+*******
+let demo=function (a,b){
+  let c;
+  c=a+b;
+  return c;
+}
+clg(demo(10,20))
+
+
+note:-
+*****
+   hoisting is not possible here 
+   those function have without a name it is called a anonymous function
+   if we invoking the anonymous function first we store the function inside a variable as a value
+   using the variable we can invoke the function 
+
+task:-
+******
+   create a function expreesion of arithmatic operation for a two numbers and the  input should be given by end user
+
+
+
+3)function programming:-
+************************
+                            i)HOF(high order function)
+                            II)CBF(call back function)
+   
+  it is used to perform a multiple task(Generic task)    
+  it can be created by using function ddclaration, function expression, arrow function
+                       
+           i)HOF(high order function):-
+           ****************************
+              a function which will accept function as a argument
+           II)CBF(call back function) 
+           ***************************
+              a function which is passed as a argument to a function
+
+  4)arrow function:-
+  *******************
+  is introduced by ES6 in 2015
+  it is used to reduce a syntax(numbers of lines of code)
+  it is a anonymous function 
+  it is a two types of returns:
+                      i)implicit return Arrow function
+                             return keyword is not mandatory
+                             ()=>clg('hello')
+                                or                           // here braces is not mandatory
+                             _=>clg('hello')
+                      ii)explicit return Arrow function
+                              return keyword is mandatory
+                             let a= ()=>{
+                                return 'hello'                        // here braces is mandatory
+                                   }
+                                   clg(a())  
+
+    syntax:-
+    *******
+      (parameter)=>{}                               
+                 fat arrow
+
+
+   limitation or dis adv :-
+   ************************
+             new keyword can not used in arrow function
+             we can not create constructor function in arrow function
+             we can not used call apply bind using in arrow function(taling a methods from a other object)
+             arrow function does not have own prototype
+                            (prototype= it is a copy of the object)
+   
+
+  5)nested function:-
+  ********************
+      when we use a function inside the another function is called a nested function
+       function parent()
+       {
+        function child()
+        {
+        var a=20
+        function demo(){
+          var a =10
+          clg(a)  // 10
+          clg(this.a)   //20
+        }
+  lexical scope:-        
+  **************
+  the ability of a javascript engine search for variablein local scope . if it is not present in local scope ,it will searching global scope
+
+
+
+  </script> -->
+
+  <!-- <script>
+    console.log(Demo(10,20))//it is a called a function hoisting
+    function demo(a,b){
+  let c;
+  c=a+b;
+  return c;
+}
+console.log(demo(10,20))
+
+function demo(){
+  let a=Number( prompt("enter a number"));
+  let b=Number( prompt("enter a number"))
+  c=a+b;
+  return c;
+}
+console.log(demo())
+
+console.log(demo(10,20))// getting error like Cannot access 'demo' before initialization 
+let demo=function (a,b){
+  let c;
+  c=a+b;
+  return c;
+}
+console.log(demo(10,20))
+
+let a=function demo(a,b){
+  let c;
+  c=a+b;                      // is getting error like demo is not defined
+  return c;
+}
+console.log(demo(10,20))
+
+
+create a function expreesion of arithmatic operation for a two numbers and the  input should be given by end user
+
+let add=function (){
+  let a=Number( prompt("enter 1st number"));
+  let b=Number( prompt("enter 2nd number"))
+  c=a+b;
+  return c;
+} -->
+<!-- // console.log(add())
+
+// let sub=function (){
+//   let a=Number( prompt("enter 1st number"));
+//   let b=Number( prompt("enter 2nd number"))
+//   c=a-b; -->
+<!-- //   return c;
+// }
+// console.log(sub())
+
+// let mul=function (){
+//   let a=Number( prompt("enter 1st number"));
+//   let b=Number( prompt("enter 2nd number"))
+//   c=a*b;
+//   return c;
+// }
+// console.log(mul())
+ 
+  // //  implicit
+  // let demo=_=>console.log('hewelloo')
+  // demo()
+
+  // explicit
+    //  let demo1= _=>{
+    //   return 'heeloo'
+    // }
+    //  console.log( demo1()) -->
+
+f
+
+
+
+
+
+  <!-- </script> -->
+  <script>
+    // (function()
+    // {
+    //   console.log('hello')
+    // })();
+
+    // (function demo1()
+    // {
+    //   console.log('hello world');
+    // })();
+
+    // let demo=(()=>{
+    //   console.log('hello rocky')
+    // })();
+
+
+    (function () {
+      var a ='rocky';
+        function userName(){
+          console.log(`user name is = ${a}` );
+        }
+        var b = 'kiran';
+        function userName1 (){
+          console.log(`user name 2 is = ${b}`);
+
+        }
+
+        var c= 'priya';
+        function userNAme2(){
+          console.log(`the username is = ${c}`);
+        }
+    })();
+
+
+
+    // console.log(window.alert())
+    // window.prompt()
+    // window.alert()
+    // window.confirm()
+
+
+    // let name = window.prompt("enter your name ")
+    // console.log(name)
+    // window.alert(`my name is ${name}`)
+
+    // console.log(window.screen)
+    // console.log(window.history)
+    // console.log(window.fetch())
+
+    // console.log(window.document)
+    // console.dir(window.document)
+
+  </script>
+</body>
+</html>
