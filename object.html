@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // //by using literal way
+    // let obj={
+    //   name:"rocky",
+    //   id:2,
+    //   Boolean:true,
+    //   null:null,
+    //   arr:[10,20,30],
+    //   BigInt:10n,
+    //   obj1:{
+    //     designation:"developer"
+    //   },
+    //   demo:function(){
+    //     console.log("hello")
+    //   }
+    // }
+    // console.log(obj)
+    // console.log(obj.arr)
+    // console.log(obj.demo())
+
+    // //by using constructor function
+    // function obj2(name,id){
+    //   this.name=name,
+    //   this.id=id
+    // }
+    // let p1=new obj2("rocky",1)
+    // console.log(p1)
+
+    //methods
+
+    let obj={
+      name:"rocky",
+      id:1
+    }
+    console.log(obj)
+    //updating existing value
+
+    obj.id=2
+    console.log(obj)
+
+    //add new key and value pair
+
+    obj.designation="developer"
+    console.log(obj)
+
+    //delete key and value pair
+
+    delete obj.designation
+    console.log(obj)
+
+    //to concat two object (assign())
+
+    let obj1={
+      location:"aska"
+    }
+    console.log(obj1)
+    Object.assign(obj,obj1)
+    console.log(obj)
+
+    //entries (convert object into array)
+
+    let obj2=Object.entries(obj)
+    console.log(obj2)
+
+    //seal()
+  //   Object.seal(obj)
+  //  console.log( Object.isSealed(obj))
+  //  obj.lastname="kumar"
+  //  console.log(obj)//the new key and value can not be updated
+  //  obj.name="kiran"
+  //  console.log(obj)//the existing key and value can be updated
+
+  //freeze()
+
+  Object.freeze(obj)
+  console.log(Object.isFrozen(obj))
+  obj.lastname="kumar"
+  console.log(obj)  //the new key and value can not be updated
+  obj.name="kiran"
+  console.log(obj)  //the existing key and value also can not be updated
+  
+
+  console.log(Object.keys(obj))
+  console.log(Object.values(obj))
+
+
+   
+
+
+    
+
+
+  </script>
+</body>
+</html>
