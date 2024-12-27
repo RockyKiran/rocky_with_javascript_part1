@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Lorem ipsum dolor sit amet.</h1>
+  <div></div>
+  <div id="list"></div>
+  <table id="tble"></table>
+
+
+
+
+
+
+
+  <script>
+   let a = document.body
+   console.log(a);
+   a.innerHTML += "<h2>web tech</h2>"
+  //  a.innerHTML +="<h2>web tech</h2>"
+  // a.innerHTML +=" " 
+  // let d = document.getElementById("divi")
+  // console.log(d)
+  // d.innerHTML +=`<ol>
+  //   <li>java</li>
+  //   <li>java_script</li>
+  //   </ol>`
+  let div = document.querySelector("div")
+  console.log(div);
+   console.log(div)
+   div.style.border="2px solid black"
+  div.innerHTML +=`<ol>
+    <li>java</li>
+    <li>java_script</li>
+    </ol>`
+
+    let table = document.getElementById("tble")
+    table.style.border="2px solid black"
+
+    let div2= document.getElementById("list")
+    console.log(div2)
+
+    let ol = document.createElement("ol")
+    console.log(ol)
+
+    div2.appendChild(ol)
+
+
+    let li1=document.createElement("li")
+    li1.textContent="hey dude"
+     ol.appendChild(li1)
+
+     let li2=document.createElement("li")
+    li2.textContent="hi buddy"
+    ol.appendChild(li2)
+    ol.setAttribute("type","A")
+    ol.style.border="2px solid black"
+
+
+    let tr1= document.createElement("tr")
+    console.log(tr1)
+    let tr2= document.createElement("tr")
+    console.log(tr2)
+    let tr3= document.createElement("tr")
+    console.log(tr3)
+
+    let td1 = document.createElement("td")
+    td1.textContent="A"
+    td1.style.border="2px solid black"
+    let td2 = document.createElement("td")
+    td2.textContent="B"
+    td2.style.border="2px solid black"
+    let td3 = document.createElement("td")
+    td3.textContent="C"
+    td3.style.border="2px solid black"
+
+    tr1.appendChild(td1)
+    tr1.appendChild(td2)
+    tr1.appendChild(td3)
+
+    table.appendChild(tr1)
+
+    let td4 = document.createElement("td")
+    td4.textContent="E"
+    td4.style.border="2px solid black"
+    let td5 = document.createElement("td")
+    td5.textContent="F"
+    td5.style.border="2px solid black"
+    let td6 = document.createElement("td")
+    td6.textContent="G"
+    td6.style.border="2px solid black"
+
+    tr2.appendChild(td4)
+    tr2.appendChild(td5)
+    tr2.appendChild(td6)
+
+    table.appendChild(tr2)
+
+
+    let td7 = document.createElement("td")
+    td7.textContent="I"
+    td7.style.border="2px solid black"
+    let td8 = document.createElement("td")
+    td8.textContent="J"
+    td8.style.border="2px solid black"
+    let td9 = document.createElement("td")
+    td9.textContent="K"
+    td9.style.border="2px solid black"
+
+    tr3.appendChild(td7)
+    tr3.appendChild(td8)
+    tr3.appendChild(td9)
+
+    table.appendChild(tr3)
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>
